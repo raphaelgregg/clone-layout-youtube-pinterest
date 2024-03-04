@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background: white;
+  max-width: 76.8rem;
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  gap: 2.4rem;
+  
+  padding: 1.6rem;
+}
+
+header svg {
+  height: 2.4rem;
+  margin-right: auto;
+}
+
+header ion-icon {
+  font-size: 2.4rem; 
+}
+
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  padding: 1.6rem;
+  display: flex;
+  gap: .8rem;
+}
+
+nav button {
+  border: 0;
+  padding: .8rem 1.2rem;
+  border-radius: .6rem;
+  font-size: 1rem;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  transition: .3s;
+}
+
+nav button:hover,
+.active {
+  background-color: black;
+  color: white;
+}
+
+/* Main onde coloco os vídeos */
+main {
+  padding: 0 1.2rem;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.channel {
+  display: flex;
+  padding: 1.2rem;
+
+  gap: 1.2rem;
+}
+
+.channel-avatar {
+  width: 3.2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.channel-info {
+  display: grid;
+}
+
+.channel-info h6 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.channel-info p {
+  font-size: 1.1rem;
+  opacity: .7;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 76.8rem;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .8rem;
+}
+
+footer div {
+  display: grid;
+  justify-items: center;
+}
+
+
+footer div ion-icon {
+  font-size: 2rem;
+}
+
+footer div span {
+  font-size: .9rem;
+}
+
+footer div svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+footer img {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
