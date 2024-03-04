@@ -12,7 +12,10 @@
 body {
   font-size: 1.6rem;
   background: white;
-  max-width: 76.8rem;
+}
+
+#app {
+  max-width: 46rem;
   width: 100%;
   margin: auto;
 }
@@ -43,6 +46,18 @@ nav {
   padding: 1.6rem;
   display: flex;
   gap: .8rem;
+}
+
+nav.scroll {
+  white-space: nowrap; /* [1] */
+  overflow-x: auto; /* [2] */
+  -webkit-overflow-scrolling: touch; /* [3] */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
+}
+
+/* [5] */
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
 nav button {
@@ -108,7 +123,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-width: 76.8rem;
+  max-width: 46rem;
 
   background: white;
 
